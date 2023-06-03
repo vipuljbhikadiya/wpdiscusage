@@ -1,0 +1,128 @@
+*{
+	box-sizing: border-box;
+}
+
+.hide{
+	display: none !important;
+}
+
+.wpdu-header{
+	position: fixed;
+	top: 32px;
+	left: 160px;
+	width: 100%;
+	padding: 20px;
+	background-color: #ffffff;
+}
+
+.wpdu-header .header-title{
+	margin: 0;
+}
+
+.wpdu-body{
+	margin-top: 80px;
+	padding-right: 20px;
+}
+
+.wpdu-box{
+	background-color: #ffffff;
+	padding: 20px;
+}
+
+.wpdu-box .box-title{
+	margin: 0 0  20px;
+	padding-bottom: 20px;
+	border-bottom: 1px solid #dddddd;
+}
+
+.flex{
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+}
+
+.grid{
+	display: -ms-grid;
+	display: grid;
+	gap: 20px;
+}
+
+
+.grid-2{
+	grid-template-columns: 0.75fr 2fr;
+}
+
+.generate-statics-block{
+	padding: 80px 0;
+	text-align: center;
+}
+
+.wpdu-file-list-wrapper{
+	grid-template-columns: 0.5fr 2fr;
+}
+
+.wpdu-directories{
+	margin: 0;
+	padding: 20px 0;
+	border-right: 1px solid #dddddd;
+}
+
+.wpdu-directories .directory{
+	position: relative;
+	cursor: pointer;
+}
+
+.wpdu-directories ul ul{
+	margin: 0;
+	padding: 0 0 0 20px;
+}
+
+.wpdu-progress {
+	border: 1px solid #B0B0B0;
+	width: 150px;
+	height: 20px;
+	overflow: hidden;
+ }
+ 
+ .wpdu-progress-bar {
+	background: #228b22;
+    width: 0;
+    height: 100%;
+	/*border: 2px solid #ffffff;*/
+}
+
+.file-percentage{
+	margin-left: 10px;
+}
+
+.file-delete {
+	color: #ee1b1b;
+}
+
+.lds-dual-ring {
+	display: inline-block;
+	width: 80px;
+	height: 80px;
+
+}
+
+.wpdu-loader:after {
+	content: " ";
+	display: block;
+	width: 64px;
+	height: 64px;
+	margin: 8px;
+	border-radius: 50%;
+	border: 6px solid #ff8100;
+	border-color: #ff8100 transparent #ff8100 transparent;
+	animation: wpdu-loader 1.2s linear infinite;
+  }
+  @keyframes wpdu-loader {
+	0% {
+	  transform: rotate(0deg);
+	}
+	100% {
+	  transform: rotate(360deg);
+	}
+  }
+  
